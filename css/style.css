@@ -5,3 +5,43 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 1em;
+}
+
+.main {
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  height: 90%;
+  justify-content: space-between;
+}
+
+.main__grid {
+  border: 5px solid black;
+  width: 70%;
+  filter: drop-shadow(-5px 3px 4px #000);
+}
+
+.main__buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 50%;
+  margin: 3em;
+  padding: 2rem;
+}
+
+button {
+  font-family: inherit;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 2rem;
+  border-style: none;
+  filter: drop-shadow(-2px 5px 3px #000);
+}
