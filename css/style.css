@@ -17,13 +17,13 @@ body {
 
 .container {
   display: flex;
-  height: 90%;
+  height: 90vh;
   justify-content: space-between;
 }
 
 .main__grid {
   border: 5px solid black;
-  width: 70%;
+  flex: 0 1 80%;
   filter: drop-shadow(-5px 3px 4px #000);
 }
 
@@ -31,7 +31,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 50%;
+  flex: 0 1 10%;
   margin: 3em;
   padding: 2rem;
 }
@@ -44,4 +44,37 @@ button {
   border-radius: 2rem;
   border-style: none;
   filter: drop-shadow(-2px 5px 3px #000);
+}
+
+#create {
+  background-color: hsl(112, 32%, 41%);
+  color: rgb(245, 244, 244);
+}
+
+#color {
+  background: linear-gradient(
+    90deg,
+    rgba(196, 42, 42, 1) 0%,
+    rgba(227, 177, 74, 1) 10%,
+    rgba(219, 228, 80, 1) 20%,
+    rgba(76, 163, 72, 1) 30%,
+    rgba(65, 210, 205, 1) 40%,
+    rgba(69, 116, 198, 1) 50%,
+    rgba(115, 83, 207, 1) 60%,
+    rgba(127, 45, 218, 1) 70%,
+    rgba(234, 71, 191, 1) 80%,
+    rgba(255, 0, 0, 1) 90%
+  );
+
+  color: rgb(245, 244, 244);
+}
+
+#mono {
+  background-color: hsl(0, 0%, 11%);
+  color: rgb(245, 244, 244);
+}
+
+#clear {
+  background-color: rgb(148, 11, 11);
+  color: rgb(245, 244, 244);
 }
